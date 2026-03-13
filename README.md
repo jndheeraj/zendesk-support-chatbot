@@ -39,20 +39,20 @@
 │   ╔═══════════════════════════════════════════════════════╗     │
 │   ║              4-Stage Agent Pipeline                   ║     │
 │   ║                                                       ║     │
-│   ║  ① IntentClassificationAgent   (gpt-4o-mini)         ║     │
-│   ║     └─ Detects: reset_password │ unsubscribe │ faq…  ║     │
+│   ║  ① IntentClassificationAgent   (gpt-4o-mini)          ║     │
+│   ║     └─ Detects: reset_password │ unsubscribe │ faq…   ║     │
 │   ║                                                       ║     │
-│   ║  ② KnowledgeRetrievalAgent     (Vector Store / RAG)  ║     │
+│   ║  ② KnowledgeRetrievalAgent     (Vector Store / RAG)   ║     │
 │   ║     └─ Fetches relevant FAQ + website docs            ║     │
 │   ║                                                       ║     │
-│   ║  ③ ResponseGenerationAgent     (gpt-4o)              ║     │
+│   ║  ③ ResponseGenerationAgent     (gpt-4o)               ║     │
 │   ║     └─ Grounded answer from retrieved context         ║     │
 │   ║                                                       ║     │
-│   ║  ④ WorkflowExecutionAgent      (SQL Server / HITL)   ║     │
+│   ║  ④ WorkflowExecutionAgent      (SQL Server / HITL)    ║     │
 │   ║     └─ Runs actions OR creates a Human-Review ticket  ║     │
 │   ╚═══════════════════════════════════════════════════════╝     │
 │                                                                 │
-│   ← SQL Server (EF Core)   ← OpenAI API   ← Serilog logs       │
+│   ← SQL Server (EF Core)   ← OpenAI API   ← Serilog logs        │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
