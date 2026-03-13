@@ -1,0 +1,20 @@
+# ===========================
+# Root .gitignore
+# ===========================
+
+# Secrets and credentials — NEVER commit these
+appsettings.Production.json
+appsettings.*.json
+!appsettings.json
+!appsettings.Development.json
+.env
+.env.*
+*.p12
+*.pfx
+*.key
+secrets.json
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

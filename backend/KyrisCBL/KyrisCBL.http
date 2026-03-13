@@ -1,0 +1,6 @@
+@KyrisCBL_HostAddress = http://localhost:5151
+
+GET {{KyrisCBL_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

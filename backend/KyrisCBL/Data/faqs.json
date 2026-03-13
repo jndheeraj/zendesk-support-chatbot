@@ -1,0 +1,26 @@
+﻿[
+  {
+    "id": "faq_001",
+    "question": "I forgot my password, how can I log in?",
+    "answer": "To reset your password, click the 'Forgot Password' link on the login page and follow the instructions.",
+    "category": "password"
+  },
+  {
+    "id": "faq_002",
+    "question": "Please remove me from your mailing list",
+    "answer": "You can unsubscribe by clicking the link at the bottom of any email. If you need further help, let us know.",
+    "category": "unsubscribe"
+  },
+  {
+    "id": "faq_003",
+    "question": "I want to opt out of selling my personal data",
+    "answer": "We respect your privacy. You can opt out by submitting a 'Do Not Sell' request on our Privacy Center page.",
+    "category": "donot_sell"
+  },
+  {
+    "id": "faq_004",
+    "question": "How do I change my email address?",
+    "answer": "You can update your email by going to your profile settings and editing the email field.",
+    "category": "profile_update"
+  }
+]

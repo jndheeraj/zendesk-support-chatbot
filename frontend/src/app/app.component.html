@@ -1,0 +1,120 @@
+<div class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-8">
+  <!-- Info section commented out:
+  <div class="max-w-4xl mx-auto">
+    <h1 class="text-4xl font-bold text-gray-800 mb-8">YourCompany – Smarter Support with SupportBot</h1>
+    <div class="bg-white rounded-lg shadow-lg p-8 mb-8">
+      <h2 class="text-2xl font-semibold text-gray-700 mb-4">Get Instant Help with Our AI Assistant</h2>
+      ...
+    </div>
+  </div>
+  -->
+
+  <body ng-app="loginApp" ng-controller="loginCtrl" class="ng-scope">
+    <!-- Google Tag Manager (noscript) -->
+    <!-- TODO: Replace GTM-XXXXXXXXX with your own Google Tag Manager container ID -->
+    <!-- <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXXXX"
+              height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript> -->
+
+    <div class="navigation_mobile">
+      <div class="nav_item_mob home ng-binding" ng-click="aboutClick()">About Us</div>
+      <div class="hr_mob_nav"></div>
+      <div class="nav_item_mob home ng-binding" ng-click="contactClick()">Contact Us</div>
+      <div class="hr_mob_nav"></div>
+      <div class="nav_item_login home_login" ng-mouseenter="showDropdown = true" ng-mouseleave="showDropdown = false">
+        <span class="language-selector ng-binding">Language</span>
+        <div class="list_language ng-hide" ng-show="showDropdown">
+          <ul>
+            <li ng-repeat="lang in EUCountryCode | orderBy :'LangName'"
+                ng-click="selectLanaguage($index, lang)"
+                class="ng-scope">
+              <b class="ng-binding">English</b>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="hr_mob_nav"></div>
+    </div>
+
+    <div class="header" style="background-color: rgba(184, 39, 43, 0.9);">
+      <div class="header_content">
+        <div href="#" class="logo"></div>
+        <div class="nav_wrapper">
+          <div class="nav_item home navigation_active ng-binding">About Us</div>
+          <div class="nav_item language navigation_inactive"
+               ng-mouseenter="showDropdown = true"
+               ng-mouseleave="showDropdown = false">
+            <span class="language-selector ng-binding">Language</span>
+            <div class="list_language ng-hide" ng-show="showDropdown">
+              <ul>
+                <li ng-repeat="lang in EUCountryCode | orderBy :'LangName'"
+                    ng-click="selectLanaguage($index, lang)"
+                    class="ng-scope">
+                  <b class="ng-binding">English</b>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="hamburger_icon"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="countries_wrapper">
+      <div class="header_content" style="padding: 0px;">
+        <div class="countries">
+          <div class="country"><img src="/images/flag1.png" width="25"><div class="country_name">Nederlands</div></div>
+          <!-- More flags... -->
+        </div>
+      </div>
+    </div>
+
+    <div class="banner">
+      <div class="banner_content">
+        <div class="slogan">
+          <div class="h1 ng-binding">Give your opinion and get paid</div>
+          <div class="h3 font_normal ng-binding">And no spam... Promise!</div>
+        </div>
+        <div class="btn_wrapper_banner">
+          <div class="centerwrapper">
+            <div class="btn_banner font_bold sign_up_email ng-binding">
+              <div class="sign_up_email_icon"></div>Create Your Account
+            </div>
+            <div class="btn_banner font_bold sign_in ng-binding">
+              <div class="sign_in_icon"></div>Sign In To Your Account
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Additional content blocks… (forms, company logos etc.) -->
+
+    <div class="footer">
+      <span style="margin-right:30px;" class="ng-binding">© Copyrights 2025</span>
+      <div class="nav_footer_wrapper">
+        <div class="nav_footer_item more_about"><a class="footer ng-binding" href="/Footer/MoreAbout">More about YourCompany</a></div>
+        <div class="nav_footer_item terms"><a class="footer ng-binding" href="" ng-click="termsClick()">Terms &amp; Conditions</a></div>
+        <div class="nav_footer_item privacy"><a class="footer ng-binding" href="" ng-click="privacyClick()">Privacy</a></div>
+        <div class="nav_footer_item terms"><a class="footer ng-binding" href="" ng-click="doNotSellMyInfo()">Do Not Sell Info</a></div>
+      </div>
+      <div class="nav_footer_mobile">
+        <div class="nav_footer_item more_about"><a class="footer" href="" ng-click="aboutClick()">More about YourCompany</a></div>
+        <div class="nav_footer_item terms"><a class="footer" href="" ng-click="termsClick()">Terms &amp; conditions</a></div>
+        <div class="nav_footer_item privacy"><a class="footer" href="" ng-click="privacyClick()">Privacy</a></div>
+      </div>
+    </div>
+
+    <div class="preloader" loader="">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="..."></script>
+    <!-- recaptcha, etc. -->
+
+    <app-chatbot-widget></app-chatbot-widget>
+    <router-outlet></router-outlet>
+  </body>
+</div>

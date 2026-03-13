@@ -1,0 +1,36 @@
+## .NET / Visual Studio
+
+# Build output
+bin/
+obj/
+*.user
+*.suo
+.vs/
+
+# Published output
+wwwroot/
+publish/
+PublishProfiles/
+
+# Log files
+Logs/
+*.log
+
+# Secrets — never commit these
+appsettings.Production.json
+appsettings.Staging.json
+secrets.json
+.env
+.env.*
+*.p12
+*.pfx
+*.pem
+*.key
+
+# NuGet
+*.nupkg
+.nuget/
+
+# OS
+.DS_Store
+Thumbs.db
